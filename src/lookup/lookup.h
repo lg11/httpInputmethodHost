@@ -182,8 +182,8 @@ public :
         return flag ;
     }
 
-    inline const Candidate* getCand( int index ) {
-        bool flag = true ;
+    inline const Candidate* getCandidate( int index ) {
+        bool flag = !this->spliter.code.isEmpty() ;
         //bool flag = true && !this->spliter.code.isEmpty() ;
         //while ( flag && this->candList.length() <= index ) {
         while ( flag && this->candLength <= index ) {
